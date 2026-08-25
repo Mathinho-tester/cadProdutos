@@ -22,6 +22,7 @@ namespace cadProdutos.Views.Categorias
 
             lblId.Text = $"#{cat.Id}";
             lblNome.Text = cat.Nome;
+/*teste*/
 
             foreach (Produto p in cat.Produto)
             {
