@@ -45,6 +45,7 @@
             // 
             // btSalvar
             // 
+            btSalvar.Anchor = AnchorStyles.Bottom;
             btSalvar.Location = new Point(222, 116);
             btSalvar.Name = "btSalvar";
             btSalvar.Size = new Size(75, 23);
@@ -55,6 +56,7 @@
             // 
             // txtnome
             // 
+            txtnome.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             txtnome.Location = new Point(106, 69);
             txtnome.Name = "txtnome";
             txtnome.Size = new Size(391, 23);

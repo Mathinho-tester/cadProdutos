@@ -7,12 +7,13 @@ using System.Text;
 namespace CadProdutos.Models
 
 {
+    [Table("produtos", Schema = "public")]
     public class Produto
     {
         [Key]
         [Column("id")]
 
-        public int Id { get; set; }
+        public int? Id { get; set; } = null;
         [Column("nome")]
 
         public string Nome { get; set; } = "";

@@ -1,5 +1,6 @@
 ﻿using CadProdutos.Data;
 using CadProdutos.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,6 +21,7 @@ namespace cadProdutos.Presenters
             return db.Categorias
                 .Where(c => c.Nome
                 .ToUpper().Contains(nome.ToUpper()))
+                .Include(c => c.Produto)
                 .ToList();
         }
 

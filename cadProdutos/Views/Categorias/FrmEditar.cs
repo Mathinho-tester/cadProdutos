@@ -22,11 +22,12 @@ namespace cadProdutos.Views.Categorias
 
             lblId.Text = $"#{cat.Id}";
             lblNome.Text = cat.Nome;
-/*teste*/
+            /*teste*/
 
             foreach (Produto p in cat.Produto)
             {
-
+                ProdControl prodCrontol = new ProdControl(this, p);
+                flpProds.Controls.Add(prodCrontol);
             }
         }
 
@@ -47,6 +48,23 @@ namespace cadProdutos.Views.Categorias
             {
                 MessageBox.Show("Erro!");
             }
+        }
+        public void ExcluirProduto(ProdControl ctrl, Produto prod)
+        {
+            cat.Produto.Remove(prod);
+            flpProds.Controls.Remove(ctrl);
+        }
+
+        private void btCadastrarProd_Click(object sender, EventArgs e)
+        {
+            Produto p = new Produto()
+            {
+                Nome = "",
+                Preco = 0
+
+            };
+            cat.Produto.Add(p);
+            flpProds.Controls.Add(new ProdControl(this, p));
         }
     }
 }

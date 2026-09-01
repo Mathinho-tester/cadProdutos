@@ -57,6 +57,7 @@
             // 
             // produtos
             // 
+            produtos.Anchor = AnchorStyles.Right;
             produtos.AutoSize = true;
             produtos.Location = new Point(100, 97);
             produtos.Name = "produtos";
@@ -66,15 +67,18 @@
             // 
             // btCadastrarProd
             // 
+            btCadastrarProd.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btCadastrarProd.Location = new Point(233, 93);
             btCadastrarProd.Name = "btCadastrarProd";
             btCadastrarProd.Size = new Size(130, 23);
             btCadastrarProd.TabIndex = 3;
             btCadastrarProd.Text = "Novo Produto";
             btCadastrarProd.UseVisualStyleBackColor = true;
+            btCadastrarProd.Click += btCadastrarProd_Click;
             // 
             // txtNome
             // 
+            txtNome.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txtNome.Location = new Point(100, 37);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(290, 23);
@@ -82,6 +86,8 @@
             // 
             // flpProds
             // 
+            flpProds.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            flpProds.AutoScroll = true;
             flpProds.Location = new Point(12, 115);
             flpProds.Name = "flpProds";
             flpProds.Size = new Size(378, 222);
@@ -89,6 +95,7 @@
             // 
             // btSalvar
             // 
+            btSalvar.Anchor = AnchorStyles.Bottom;
             btSalvar.Location = new Point(158, 346);
             btSalvar.Name = "btSalvar";
             btSalvar.Size = new Size(75, 23);

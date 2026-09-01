@@ -23,8 +23,12 @@ namespace cadProdutos.Views.Categorias
             this.grid = grid;
             this.presenter = presenter;
 
-            lblId.Text = $"#{cat.Id}";
+            lblId.Text = $"#{cat.Id} ({cat.Produto.Count} " + $"produto{(cat.Produto.Count ==1 ? "" : "S")}";
             lblNome.Text = cat.Nome;
+            if(cat.Produto.Count > 0)
+            {
+                btExcluir.Enabled = false;
+            }
         }
 
         private void btExcluir_Click(object sender, EventArgs e)

@@ -36,6 +36,8 @@
             // 
             // flpItens
             // 
+            flpItens.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flpItens.AutoScroll = true;
             flpItens.Location = new Point(12, 64);
             flpItens.Name = "flpItens";
             flpItens.Size = new Size(776, 367);
@@ -43,6 +45,7 @@
             // 
             // btBusca
             // 
+            btBusca.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btBusca.Location = new Point(475, 21);
             btBusca.Name = "btBusca";
             btBusca.Size = new Size(96, 32);
@@ -53,7 +56,6 @@
             // 
             // txtBusca
             // 
-            txtBusca.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtBusca.Location = new Point(208, 27);
             txtBusca.Name = "txtBusca";
             txtBusca.RightToLeft = RightToLeft.No;
@@ -62,7 +64,8 @@
             // 
             // btCadastrar
             // 
-            btCadastrar.Location = new Point(336, 418);
+            btCadastrar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btCadastrar.Location = new Point(340, 440);
             btCadastrar.Name = "btCadastrar";
             btCadastrar.Size = new Size(75, 23);
             btCadastrar.TabIndex = 3;
